@@ -1175,6 +1175,11 @@ footer .legal {
   display: flex; gap: 8px; align-items: baseline;
   font-size: 14px;
   color: var(--ink-soft);
+  flex-shrink: 0;
+}
+.sticky-bottom .price-mini .new,
+.sticky-bottom .price-mini .old {
+  white-space: nowrap;
 }
 .sticky-bottom .price-mini .new {
   font-size: 19px;
@@ -1431,7 +1436,8 @@ footer .legal {
   footer .container { grid-template-columns: 1fr; gap: 28px; }
   footer .legal { flex-direction: column; gap: 6px; align-items: flex-start; }
 
-  .sticky-bottom { padding: 6px 6px 6px 14px; gap: 10px; bottom: 12px; }
+  .sticky-bottom { padding: 6px 6px 6px 14px; gap: 8px; bottom: 12px; }
+  .sticky-bottom .price-mini { gap: 6px; }
   .sticky-bottom .price-mini .new { font-size: 17px; }
   .sticky-bottom .btn { padding: 10px 14px; font-size: 14px; }
   .sticky-bottom .ctx { display: none; }
