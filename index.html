@@ -1375,9 +1375,11 @@ footer .legal {
   h3 { font-size: 20px; }
   .hero-sub { font-size: 16px; }
 
-  .hero { padding: 28px 0 44px; }
-  .hero-photo { aspect-ratio: 1 / 1; }
-  .hero-pill-row { gap: 8px; margin-bottom: 16px; }
+  .hero { padding: 24px 0 40px; }
+  .hero-grid { gap: 22px; }
+  .hero-grid > .hero-photo { order: 2; aspect-ratio: 4 / 3; max-height: 52vh; }
+  .hero-grid > div:not(.hero-photo) { order: 1; }
+  .hero-pill-row { gap: 8px; margin-bottom: 14px; }
   .date-pill, .spots-pill { font-size: 12px; padding: 6px 11px; }
   .hero-cta-row { flex-direction: column; align-items: stretch; gap: 10px; }
   .hero-cta-row .btn { width: 100%; }
