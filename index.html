@@ -1391,15 +1391,18 @@ footer .legal {
   h3 { font-size: 20px; }
   .hero-sub { font-size: 16px; }
 
-  .hero { padding: 24px 0 40px; }
-  .hero-grid { gap: 22px; }
+  .hero { padding: 20px 0 34px; }
+  .hero-grid { gap: 20px; }
   .hero-grid > .hero-photo { order: 2; aspect-ratio: 4 / 3; max-height: 52vh; }
-  .hero-grid > div:not(.hero-photo) { order: 1; }
-  .hero-pill-row { gap: 8px; margin-bottom: 14px; }
+  .hero-grid > div:not(.hero-photo) { order: 1; display: flex; flex-direction: column; }
+  .hero-pill-row { gap: 8px; margin-bottom: 12px; }
   .date-pill, .spots-pill { font-size: 12px; padding: 6px 11px; }
-  .hero-cta-row { flex-direction: column; align-items: stretch; gap: 10px; }
+  .hero-sub { font-size: 15px; line-height: 1.5; margin-bottom: 0; }
+  .hero-cta-row { order: 4; flex-direction: column; align-items: stretch; gap: 10px; margin-top: 18px; }
   .hero-cta-row .btn { width: 100%; }
-  .hero-micro-trust { font-size: 12px; gap: 8px 10px; }
+  .hero-bullets { order: 5; margin-top: 18px; gap: 10px; }
+  .hero-bullets li { font-size: 14.5px; line-height: 1.4; }
+  .hero-micro-trust { order: 6; font-size: 12px; gap: 8px 10px; margin-top: 16px; }
 
   .green-block.tight .green-block-grid > div:last-child { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
 
